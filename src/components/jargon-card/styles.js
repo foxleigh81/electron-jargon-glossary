@@ -8,11 +8,13 @@ export default styled.li`
   position: relative;
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
   }
 
   .description {
     padding: 1rem 0;
+    line-height: 1.4;
   }
 
   &.card-type {
@@ -25,12 +27,14 @@ export default styled.li`
   }
 
   .card-tag {
-    position: absolute;
-    top: 0;
-    right: 0;
+    display:block;
+    text-align: right;
     padding: .5rem;
-    background-color: #ffffff40;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.15);
+    color: #fff;
+    margin: -1rem;
+    margin-bottom: .7rem;
   }
 
   .long-term {
