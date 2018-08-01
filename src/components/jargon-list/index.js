@@ -1,14 +1,14 @@
 import React from 'react'
 import JargonCard from '../jargon-card'
-import JargonCardStyles from './styles'
+import JargonCardWrapper from './styles'
 
 const JargonList = (props) => {
   return (
-    <JargonCardStyles>
+    <JargonCardWrapper>
         {
           props.data.map((e, i) => <JargonCard key={e.uuid} {...e} />)
         }
-    </JargonCardStyles>
+    </JargonCardWrapper>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import JargonList from './components/jargon-list'
 import data from './data'
+import SiteHeader from './components/site-header'
 
 // Import styles
 import AppStyles from './styles'
@@ -10,9 +11,7 @@ class App extends Component {
     return (
       <AppStyles>
         <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Jargonnaloveit</h1>
-          </header>
+          <SiteHeader />
           <JargonList data={data} />
         </div>
       </AppStyles>

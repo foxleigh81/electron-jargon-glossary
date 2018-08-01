@@ -1,22 +1,18 @@
 import React from 'react'
-import JargonCardStyles from './styles'
+import JargonCardWrapper from './styles'
+import SourceList from '../source-list';
 
 const JargonCard = (props) => {
   return (
-    <JargonCardStyles>
+    <JargonCardWrapper className={'card-type card-type--' + props.type}>
+      <span className="card-tag">{props.type}</span>
       <h1>{props.shortTerm ? props.shortTerm : props.longTerm}</h1>
-      {props.shortTerm ? <span>{props.longTerm}</span> : null}
-      { props.definition.length > 0 && <p>{props.definition}</p>}
-      {/* TODO: Make child components not inline if */}
+      {props.shortTerm ? <span className="long-term">{props.longTerm}</span> : null}
+      { props.definition.length > 0 && <div className="description"><p>{props.definition}</p></div>}
       { props.sources && 
-        <React.Fragment>
-          <h2>Sources:</h2>
-          <ul>
-            { props.sources.map((data) => <li key={data.name}><a href={data.url}>{props.longTerm} on {data.name}</a></li>)}
-          </ul>
-        </React.Fragment>
+        <SourceList {...props} />
       }
-    </JargonCardStyles>
+    </JargonCardWrapper>
   )
 }
 
