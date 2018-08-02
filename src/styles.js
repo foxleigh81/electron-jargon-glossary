@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-// Style the main app container (NOTE: global styles are in index.css)
+// Style the main app container (NOTE: global styles are in theme/globalStyles.js)
 const AppStyles = styled.main`
   header {
     padding: 1rem;

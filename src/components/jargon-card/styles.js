@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export default styled.li`
-  width: 28%;
+  width: 29vw;
+  height: 25vh;
   float: left;
   padding: 1rem;
-  margin: 1%;
+  margin: 1vh 1vw;
   position: relative;
 
   h1 {
@@ -19,10 +20,10 @@ export default styled.li`
 
   &.card-type {
     &--acronym {
-      background-color: #BBDEFB;
+      background-color: ${props => props.theme.colours.acronym};
     }
     &--term {
-      background-color: #B2DFDB;
+      background-color: ${props => props.theme.colours.term};
     }
   }
 

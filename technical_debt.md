@@ -14,6 +14,11 @@ Nice to have: [NTH]
 
 ## Tasks
 
-1. AF: [LP] Update project to only show console in dev mode
+1. AF: [HP] Dockerize app
+2. AF: [HP] Add GraphQL express project to run backend
+3. AF: Port JSON data to graphql
+4. AF: Create editor page for terms
+5. AF: Work out how to use styled-components with a grid system
+6. AF: Look into puppeteer targeting c38
 
 ## Issues
