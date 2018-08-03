@@ -11,9 +11,6 @@ const JargonCard = (props) => {
       {props.shortTerm ? <span className="long-term">{props.longTerm}</span> : null}
       </h1>
       { props.definition.length > 0 && <div className="description"><p>{props.definition}</p></div>}
-      {/* { props.sources && 
-        <SourceList {...props} />
-      } */}
     </JargonCardWrapper>
   )
 }

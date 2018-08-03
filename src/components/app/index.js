@@ -1,6 +1,6 @@
 // Import dependencies
 import React, { Component } from 'react'
-import { ApolloProvider, Query } from "react-apollo";
+import { ApolloProvider } from "react-apollo";
 import { ThemeProvider } from 'styled-components';
 import ApolloClient from "apollo-boost";
 
