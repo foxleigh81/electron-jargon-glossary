@@ -1,6 +1,7 @@
 import React from 'react'
 import JargonCardWrapper from './styles'
-import SourceList from '../source-list';
+// NOTE: Sources temporarily removed
+// import SourceList from '../source-list';
 
 const JargonCard = (props) => {
   return (
@@ -10,9 +11,9 @@ const JargonCard = (props) => {
       {props.shortTerm ? <span className="long-term">{props.longTerm}</span> : null}
       </h1>
       { props.definition.length > 0 && <div className="description"><p>{props.definition}</p></div>}
-      { props.sources && 
+      {/* { props.sources && 
         <SourceList {...props} />
-      }
+      } */}
     </JargonCardWrapper>
   )
 }

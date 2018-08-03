@@ -7,7 +7,7 @@ const SourceList = (props) => {
     <SourceListWrapper>
         <h2>Related Sources:</h2>
         <ul>
-          { props.sources.map((data) => <SourceListItem key={data.uuid} name={data.name} url={data.url} parent={props.longTerm} />)}
+          { props.sources.map((data) => <SourceListItem key={data.id} name={data.name} url={data.url} parent={props.longTerm} />)}
         </ul>
     </SourceListWrapper>
   )
