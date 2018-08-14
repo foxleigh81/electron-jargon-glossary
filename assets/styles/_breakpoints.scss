@@ -1,0 +1,34 @@
+$x-small: 480px;
+$small: 480px;
+$medium: 850px;
+$large: 1024px;
+$x-large: 1600px;
+@mixin xs {
+    @media (min-width: #{$x-small}) {
+        @content;
+    }
+}
+
+@mixin s {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin m {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin l {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$x-large}) {
+        @content;
+    }
+}
